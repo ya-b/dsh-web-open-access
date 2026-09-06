@@ -1,0 +1,28 @@
+{
+  "name": "@deepseek-ai/dsh-client-connection",
+  "version": "0.1.2-open-access",
+  "description": "Open-access replacement for @deepseek-ai/dsh-client-connection: the same connection service surface and browser transport, with token/cookie authentication, the /api 401 check, the 403 Host/Origin trust fence, and the launch-token URL exchange removed. Installed as a shadow of the shipped package by the dsh-web-open-access plugin; no configuration.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "immediately": true
+    }
+  }
+}
